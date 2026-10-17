@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reports</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="bg-video.mp4" type="video/mp4">
+        </video>
+        <div id="nav"></div>
+        <main class="container">
+            <div class="page-heading">
+                <div>
+                    <h1>Reports</h1>
+                    <p class="muted">Understand your spending habits.</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+        <span>Total Expenses</span>
+        <strong id="reportTotal">₹0</strong>
+    </div>
+    <div class="stat">
+        <span>Average Expense</span>
+        <strong id="reportAverage">₹0</strong>
+    </div>
+</div>
+<div class="grid-2">
+    <section class="panel">
+        <h2>Category-wise Expenses</h2>
+        <div id="categoryReport"></div>
+    </section>
+    <section class="panel">
+        <h2>Monthly Summary</h2>
+        <div id="monthlyReport"></div>
+    </section>
+</div>
+</main>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MoneyMate</title>
+
+    <link rel="icon" type="image/png" href="emoji.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop playsinline>
+        <source src="bg-video.mp4" type="video/mp4">
+    </video>
+    <div id="nav"></div>
+    <main class="container">
+
+        <div class="page-heading">
+            <div>
+                <p class="eyebrow"></p>
+                <h1>Let’s Track Your Spending 📊</h1>
+                <p class="muted">
+                    Track your spending, take control of your future
+                </p>
+            </div>
+
+            <a class="primary button" href="add-expense.html">
+                + Add Expense
+            </a>
+        </div>
+
+        <div class="stats">
+
+            <div class="stat">
+                <span>Total Income</span>
+                <strong id="income">₹0</strong>
+            </div>
+
+            <div class="stat">
+                <span>Total Expense</span>
+                <strong id="expense">₹0</strong>
+            </div>
+
+            <div class="stat">
+                <span>Current Balance</span>
+                <strong id="balance">₹0</strong>
+            </div>
+
+            <div class="stat">
+                <span>Monthly Budget</span>
+                <strong id="budget">₹0</strong>
+            </div>
+
+        </div>
+
+        <div class="grid-2">
+
+            <section class="panel">
+                <div class="panel-title">
+                    <h2>Recent Expenses</h2>
+                    <a href="expenses.html">View all</a>
+                </div>
+
+                <div id="recent"></div>
+            </section>
+
+            <section class="panel">
+                <h2>Quick Actions</h2>
+
+                <div class="quick">
+                    <a href="add-expense.html">💸 Add Expense</a>
+                    <a href="expenses.html">🧾 Transactions</a>
+                    <a href="reports.html">📊 Reports</a>
+                    <a href="budget.html">🎯 Budget</a>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Profile</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="bg-video.mp4" type="video/mp4">
+        </video>
+</video>
+    <div id="nav"></div>
+<main class="container narrow">
+    <div class="page-heading"><div>
+        <h1>Profile & Settings</h1> 
+    </div> </div>
+<section class="panel">
+    <form onsubmit="saveProfile(event)">
+        <label>Name <input id="profileName" required> </label>
+        <label>Email <input id="profileEmail" type="email" required> </label>
+        <label>Currency <select id="currency">
+            <option>INR (₹)</option>
+            <option>USD ($)</option>
+            <option>EUR (€)</option>
+        </select> </label>
+        <button class="primary" type="submit">Save Changes</button>
+    </form>
+    <hr>
+    <button class="danger" onclick="logout()">Logout</button>
+</section>
+</main>
+<script src="../js/script.js"></script>
+</body>
+</html>
